@@ -80,6 +80,16 @@ public class PersonRepository {
 		return funcionarios;
 	}
 
+	public Boolean removerPessoa(String cpf){
+		try {
+			st.executeUpdate("DELETE FROM person WHERE cpf = '"+cpf+"'");
+			return true;
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
 	public void inserirPessoa(Person person) {
 
 		String role = "";

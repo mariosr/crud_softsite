@@ -34,7 +34,7 @@ public class Main extends MainWindow {
 	private RadioGroupController rgGender;
 	private RadioGroupController rgRole;
 	private FieldsValidator fieldsValidator;
-	private Button btInsert, btClear, btList;
+	private Button btInsert, btClear, btList,btRemove;
 	private int heightDefault = 30;
 	private int widthDefault = 300;
 	private Person funcionario;
@@ -101,6 +101,9 @@ public class Main extends MainWindow {
 		add(btInsert = new Button(
 				fieldsValidator.capitalizeFirstLetter("cadastrar")), BEFORE,
 				SAME, PARENTSIZE + 40, PREFERRED, sp);
+
+		add(btRemove = new Button(fieldsValidator.capitalizeFirstLetter("remover")),
+				LEFT+90, AFTER + 175, PARENTSIZE +40, PREFERRED, sp);
 		add(btClear = new Button(
 				fieldsValidator.capitalizeFirstLetter("limpar")), AFTER, SAME,
 				PARENTSIZE + 40, PREFERRED, sp);
@@ -110,6 +113,7 @@ public class Main extends MainWindow {
 		btInsert.setBackColor(Color.GREEN);
 		btClear.setBackColor(Color.PINK);
 		btList.setBackColor(Color.BLUE);
+		btRemove.setBackColor(Color.RED);
 
 		if (Settings.onJavaSE || Settings.platform.equals(Settings.WIN32))
 			add(new Label("Pressione f11 para abrir o teclado virtual."),
@@ -131,6 +135,9 @@ public class Main extends MainWindow {
 				} else if (e.target == btList) {
 					listPersons();
 				}
+				else if (e.target == btRemove) {
+					removePerson();
+				}
 				break;
 			}
 		} catch (Exception ee) {
@@ -138,6 +145,13 @@ public class Main extends MainWindow {
 		}
 	}
 
+	public void removePerson(){
+		
+		RemoverPessoa c = new RemoverPessoa();
+		swap(c);
+		
+	}
+	
 	public void listPersons() {
 		List<Person> funcionarios = personService.listarPessoas();
 		ListarPessoas c = new ListarPessoas(funcionarios);

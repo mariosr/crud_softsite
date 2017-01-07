@@ -17,6 +17,10 @@ public class PersonService {
 		personRepository.inserirPessoa(person);
 	}
 	
+	public Boolean removerPessoa(String cpf){
+		return personRepository.removerPessoa(cpf);
+	}
+	
 	public List<Person> listarPessoas(){
 		return personRepository.listarPessoas();
 	}

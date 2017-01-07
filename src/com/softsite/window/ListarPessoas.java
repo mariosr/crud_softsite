@@ -83,6 +83,8 @@ public class ListarPessoas extends Container {
 		add(btBack = new Button(fieldsValidator.capitalizeFirstLetter("Voltar")), LEFT+185, SAME,
 				PARENTSIZE + 80, PREFERRED, sp);
 
+		btBack.setBackColor(Color.YELLOW);
+		
 		Toast.posY = CENTER;
 		
 	}
