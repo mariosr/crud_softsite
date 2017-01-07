@@ -1,4 +1,4 @@
-package com.softsite.mainwindow;
+package com.softsite.window;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -20,9 +20,9 @@ import totalcross.util.InvalidDateException;
 
 import com.softsite.auxiliaries.FieldsValidator;
 import com.softsite.auxiliaries.Gender;
-import com.softsite.models.Employee;
-import com.softsite.models.Manager;
-import com.softsite.models.Person;
+import com.softsite.model.Employee;
+import com.softsite.model.Manager;
+import com.softsite.model.Person;
 import com.softsite.service.PersonService;
 
 public class Main extends MainWindow {

@@ -2,7 +2,7 @@ package com.softsite.service;
 
 import java.util.List;
 
-import com.softsite.models.Person;
+import com.softsite.model.Person;
 import com.softsite.repository.PersonRepository;
 
 public class PersonService {

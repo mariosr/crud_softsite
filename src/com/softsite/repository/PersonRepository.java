@@ -13,9 +13,9 @@ import totalcross.sys.Settings;
 import totalcross.ui.dialog.MessageBox;
 
 import com.softsite.auxiliaries.Gender;
-import com.softsite.models.Employee;
-import com.softsite.models.Manager;
-import com.softsite.models.Person;
+import com.softsite.model.Employee;
+import com.softsite.model.Manager;
+import com.softsite.model.Person;
 
 public class PersonRepository {
 

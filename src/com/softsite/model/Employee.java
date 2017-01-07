@@ -1,4 +1,4 @@
-package com.softsite.models;
+package com.softsite.model;
 
 public class Employee extends Person {
 

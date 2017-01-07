@@ -1,4 +1,4 @@
-package com.softsite.mainwindow;
+package com.softsite.window;
 
 import java.util.List;
 
@@ -15,8 +15,8 @@ import totalcross.ui.gfx.Color;
 import totalcross.ui.gfx.Rect;
 
 import com.softsite.auxiliaries.FieldsValidator;
-import com.softsite.models.Manager;
-import com.softsite.models.Person;
+import com.softsite.model.Manager;
+import com.softsite.model.Person;
 
 public class ListarPessoas extends Container {
 

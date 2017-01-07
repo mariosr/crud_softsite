@@ -1,4 +1,4 @@
-package com.softsite.models;
+package com.softsite.model;
 
 import com.softsite.auxiliaries.AuthorizationType;
 
